@@ -10,7 +10,11 @@ import sys
 sys.path.append(r"C:\Users\cs08\Documents\Projects\Python_Scripts\RPA")
 import ml_functions as uv
 
+#Code essentially searches for yellow markers within an input image,
+#then applies a ML algorithm to classify whether marker is present.
 
+#TODO: Refine colour trehsolds to optimum level, apply skeleton process
+# to estiamte cross centroid within marker
 
                        
 ml_model = r"E:\RPA_ANALYSIS\COMBWICH\20170314\F1\ML\lenet\model\marker.model"
