@@ -15,8 +15,6 @@ from keras import backend as k
 
 
 
-
-
 def detectMarkers(input_image,blur_radius,lower_bgr_thresh,
                   upper_bgr_thresh,area_filter=200):
     
@@ -60,9 +58,7 @@ def detectMarkers(input_image,blur_radius,lower_bgr_thresh,
     return sub_contours
 
 
-
-
-
+  
 
 def classifyMarkers(input_image,contours,input_model,crop_window=14):
     
@@ -70,8 +66,7 @@ def classifyMarkers(input_image,contours,input_model,crop_window=14):
         crop window (28x28 by default) same as ML training architecture then 
         applies the lenet ML algorithm to determine proability of image being 
         a marker. Pixel coordinates of the marker are then returned'''
-    
-      
+          
     marker_x, marker_y = [] , []
 
     for cont in contours:
@@ -128,4 +123,5 @@ def classifyMarkers(input_image,contours,input_model,crop_window=14):
         
     return marker_x, marker_y    
 
+  
   
