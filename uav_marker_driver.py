@@ -26,3 +26,7 @@ blur_radius = 19
 
 contours = uv.detectMarkers(input_image,blur_radius,bgr_low,bgr_high)
 markers_x,markers_y = uv.classifyMarkers(input_image,contours,ml_model)
+
+
+
+
